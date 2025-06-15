@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ReVastra Design System - Updated Professional Color Palette */
+/* ReVastra Design System - Earth-toned Eco-conscious Color Palette */
 
 @layer base {
   :root {
@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 40% 20%;  /* #1E293B Slate Navy */
+    --primary: 86 21% 64%;  /* #95A677 Sage Green */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 200 98% 60%;  /* #38BDF8 Sky Blue */
+    --secondary: 36 11% 58%;  /* #A39384 Warm Taupe */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 48 96% 64%;  /* #FCD34D Golden Yellow */
+    --accent: 45 82% 46%;  /* #D4A017 Mustard Yellow */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 210 40% 20%;
+    --ring: 86 21% 64%;
 
     --radius: 0.75rem;
 
@@ -48,29 +48,29 @@
   }
 
   .dark {
-    --background: 210 40% 20%;
-    --foreground: 210 40% 98%;
+    --background: 200 11% 17%;
+    --foreground: 40 36% 95%;
 
-    --card: 210 40% 20%;
-    --card-foreground: 210 40% 98%;
+    --card: 200 11% 17%;
+    --card-foreground: 40 36% 95%;
 
-    --popover: 210 40% 20%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 200 11% 17%;
+    --popover-foreground: 40 36% 95%;
 
-    --primary: 200 98% 60%;
+    --primary: 45 82% 46%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 40 36% 95%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 48 96% 64%;
-    --accent-foreground: 210 40% 20%;
+    --accent: 45 82% 46%;
+    --accent-foreground: 200 11% 17%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 40 36% 95%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
@@ -102,19 +102,19 @@
 
 @layer components {
   .glass-card {
-    @apply bg-white/95 backdrop-blur-md border border-gray-200 shadow-lg;
+    @apply bg-white/95 backdrop-blur-md border border-rv-secondary/20 shadow-lg;
   }
   
   .btn-primary {
-    @apply bg-rv-primary text-white font-heading font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
+    @apply bg-rv-accent text-rv-text-primary font-heading font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:bg-rv-accent-2;
   }
   
   .input {
-    @apply w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rv-secondary focus:border-transparent transition-all duration-300;
+    @apply w-full px-4 py-3 border border-rv-secondary rounded-xl focus:ring-2 focus:ring-rv-primary focus:border-transparent transition-all duration-300;
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-rv-primary via-rv-secondary to-rv-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-rv-primary via-rv-accent to-rv-accent-2 bg-clip-text text-transparent;
   }
   
   .section-padding {

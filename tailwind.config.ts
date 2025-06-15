@@ -63,17 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated ReVastra Brand Colors - Professional & Unisex
-				'rv-primary': '#1E293B',     // Slate Navy
-				'rv-secondary': '#38BDF8',   // Sky Blue
-				'rv-accent': '#FCD34D',      // Golden Yellow
-				'rv-bg-light': '#F1F5F9',    // Off White Gray
-				'rv-bg-dark': '#0F172A',     // Charcoal
-				'rv-text-primary': '#0F172A', // Charcoal
-				'rv-text-secondary': '#64748B', // Muted Blue Gray
-				'rv-gradient-start': '#1E293B',
-				'rv-gradient-mid': '#38BDF8',
-				'rv-gradient-end': '#FCD34D'
+				// Updated ReVastra Brand Colors - Earth-toned & Eco-conscious
+				'rv-primary': '#95A677',     // Sage Green
+				'rv-secondary': '#A39384',   // Warm Taupe
+				'rv-accent': '#D4A017',      // Mustard Yellow
+				'rv-accent-2': '#B7410E',    // Brick Red
+				'rv-bg-light': '#F5F1E9',    // Soft Cream
+				'rv-bg-dark': '#1A292F',     // Deep Navy Blue
+				'rv-text-primary': '#1A292F', // Deep Navy Blue
+				'rv-text-secondary': '#7C7C7C', // Dust Gray
+				'rv-highlight': '#4FA3D9',   // Azure Blue
+				'rv-gradient-start': '#95A677',
+				'rv-gradient-mid': '#D4A017',
+				'rv-gradient-end': '#B7410E'
 			},
 			fontFamily: {
 				'heading': ['Poppins', 'sans-serif'],
@@ -132,10 +134,10 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 5px rgba(30, 41, 59, 0.4)'
+						boxShadow: '0 0 5px rgba(149, 166, 119, 0.4)'
 					},
 					'50%': {
-						boxShadow: '0 0 25px rgba(56, 189, 248, 0.8), 0 0 35px rgba(252, 211, 77, 0.6)'
+						boxShadow: '0 0 25px rgba(212, 160, 23, 0.8), 0 0 35px rgba(183, 65, 14, 0.6)'
 					}
 				}
 			},
@@ -150,14 +152,14 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'rv-gradient': 'linear-gradient(135deg, #1E293B 0%, #38BDF8 50%, #FCD34D 100%)',
-				'rv-gradient-soft': 'linear-gradient(135deg, #1E293B20 0%, #38BDF820 50%, #FCD34D20 100%)',
-				'rv-hero-gradient': 'linear-gradient(135deg, #F1F5F9 0%, #1E293B08 50%, #38BDF808 100%)'
+				'rv-gradient': 'linear-gradient(135deg, #95A677 0%, #D4A017 50%, #B7410E 100%)',
+				'rv-gradient-soft': 'linear-gradient(135deg, #95A67720 0%, #D4A01720 50%, #B7410E20 100%)',
+				'rv-hero-gradient': 'linear-gradient(135deg, #F5F1E9 0%, #95A67708 50%, #D4A01708 100%)'
 			},
 			boxShadow: {
-				'neon': '0 0 20px rgba(56, 189, 248, 0.5), 0 0 40px rgba(252, 211, 77, 0.3)',
-				'neon-hover': '0 0 30px rgba(56, 189, 248, 0.7), 0 0 60px rgba(252, 211, 77, 0.5)',
-				'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+				'neon': '0 0 20px rgba(212, 160, 23, 0.5), 0 0 40px rgba(183, 65, 14, 0.3)',
+				'neon-hover': '0 0 30px rgba(212, 160, 23, 0.7), 0 0 60px rgba(183, 65, 14, 0.5)',
+				'glass': '0 8px 32px 0 rgba(26, 41, 47, 0.37)',
 			}
 		}
 	},
