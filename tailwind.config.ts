@@ -63,18 +63,29 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Gen-Z Brand Colors
-				'brand-pink': '#FF6B9D',
-				'brand-purple': '#A855F7',
-				'brand-mint': '#34D399',
-				'brand-coral': '#FB7185',
-				'brand-sky': '#0EA5E9',
-				'brand-yellow': '#FBBF24'
+				// Gen-Z ReVastra Brand Colors
+				'rv-primary': '#5D3FD3',     // Violet Indigo
+				'rv-secondary': '#FF66B3',   // Candy Pink
+				'rv-accent': '#00D1B2',      // Mint Cyan
+				'rv-bg-light': '#F9FAFB',    // Light Ash
+				'rv-bg-dark': '#1F2937',     // Slate Gray
+				'rv-text-primary': '#111827', // Black Gray
+				'rv-text-secondary': '#6B7280', // Muted Gray
+				'rv-gradient-start': '#5D3FD3',
+				'rv-gradient-mid': '#FF66B3',
+				'rv-gradient-end': '#00D1B2'
+			},
+			fontFamily: {
+				'heading': ['Poppins', 'sans-serif'],
+				'body': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				'xl': '1rem',
+				'2xl': '1.5rem',
+				'3xl': '2rem'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -121,10 +132,32 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 5px rgba(168, 85, 247, 0.4)'
+						boxShadow: '0 0 5px rgba(93, 63, 211, 0.4)'
 					},
 					'50%': {
-						boxShadow: '0 0 20px rgba(168, 85, 247, 0.8)'
+						boxShadow: '0 0 25px rgba(93, 63, 211, 0.8), 0 0 35px rgba(255, 102, 179, 0.6)'
+					}
+				},
+				'neon-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px rgba(93, 63, 211, 0.5), 0 0 10px rgba(93, 63, 211, 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 20px rgba(93, 63, 211, 0.8), 0 0 30px rgba(255, 102, 179, 0.6), 0 0 40px rgba(0, 209, 178, 0.4)'
+					}
+				},
+				'bounce-in': {
+					'0%': {
+						transform: 'scale(0.3)',
+						opacity: '0'
+					},
+					'50%': {
+						transform: 'scale(1.1)',
+						opacity: '0.8'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
 					}
 				}
 			},
@@ -134,13 +167,21 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in-right': 'slide-in-right 0.5s ease-out',
 				'float': 'float 3s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'neon-glow': 'neon-glow 2s ease-in-out infinite',
+				'bounce-in': 'bounce-in 0.6s ease-out'
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'brand-gradient': 'linear-gradient(135deg, #FF6B9D 0%, #A855F7 50%, #34D399 100%)',
-				'hero-gradient': 'linear-gradient(135deg, #FF6B9D20 0%, #A855F720 50%, #34D39920 100%)'
+				'rv-gradient': 'linear-gradient(135deg, #5D3FD3 0%, #FF66B3 50%, #00D1B2 100%)',
+				'rv-gradient-soft': 'linear-gradient(135deg, #5D3FD320 0%, #FF66B320 50%, #00D1B220 100%)',
+				'rv-hero-gradient': 'linear-gradient(135deg, #F9FAFB 0%, #5D3FD308 50%, #FF66B308 100%)'
+			},
+			boxShadow: {
+				'neon': '0 0 20px rgba(93, 63, 211, 0.5), 0 0 40px rgba(255, 102, 179, 0.3)',
+				'neon-hover': '0 0 30px rgba(93, 63, 211, 0.7), 0 0 60px rgba(255, 102, 179, 0.5)',
+				'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
 			}
 		}
 	},
