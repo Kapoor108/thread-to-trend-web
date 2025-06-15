@@ -2,17 +2,20 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Heart, ShoppingCart, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'Products', href: '#products' },
-    { name: 'Donate', href: '#donate' },
-    { name: 'Upcycle Studio', href: '#studio' },
-    { name: 'Impact', href: '#impact' },
-    { name: 'About', href: '#about' }
+    { name: 'Home', href: '/' },
+    { name: 'Shop', href: '/shop' },
+    { name: 'Upcycle Studio', href: '/upcycle-studio' },
+    { name: 'Customize My Outfit', href: '/customize' },
+    { name: 'Donate Clothes', href: '/donate' },
+    { name: 'Tailor/Designer Portal', href: '/tailor-portal' },
+    { name: 'NGO/Partners', href: '/ngo-partners' },
+    { name: 'StyleFeed', href: '/stylefeed' }
   ];
 
   return (
@@ -20,25 +23,25 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-brand-gradient rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">R</span>
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-brand-pink to-brand-purple bg-clip-text text-transparent">
-              ReVastra
+              ReviveWear
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-brand-purple transition-colors duration-200 font-medium"
+                to={item.href}
+                className="text-gray-700 hover:text-brand-purple transition-colors duration-200 font-medium text-sm whitespace-nowrap"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -50,15 +53,17 @@ const Header = () => {
             <Button variant="ghost" size="icon">
               <ShoppingCart className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hidden sm:flex">
-              <User className="h-5 w-5" />
-            </Button>
+            <Link to="/dashboard">
+              <Button variant="ghost" size="icon" className="hidden sm:flex">
+                <User className="h-5 w-5" />
+              </Button>
+            </Link>
             
             {/* Mobile Menu Button */}
             <Button 
               variant="ghost" 
               size="icon" 
-              className="md:hidden"
+              className="lg:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -68,18 +73,25 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-gray-700 hover:text-brand-purple transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
+              <Link
+                to="/dashboard"
+                className="text-gray-700 hover:text-brand-purple transition-colors duration-200 font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Dashboard
+              </Link>
             </nav>
           </div>
         )}
