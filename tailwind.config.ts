@@ -63,17 +63,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Gen-Z ReVastra Brand Colors
-				'rv-primary': '#5D3FD3',     // Violet Indigo
-				'rv-secondary': '#FF66B3',   // Candy Pink
-				'rv-accent': '#00D1B2',      // Mint Cyan
-				'rv-bg-light': '#F9FAFB',    // Light Ash
-				'rv-bg-dark': '#1F2937',     // Slate Gray
-				'rv-text-primary': '#111827', // Black Gray
-				'rv-text-secondary': '#6B7280', // Muted Gray
-				'rv-gradient-start': '#5D3FD3',
-				'rv-gradient-mid': '#FF66B3',
-				'rv-gradient-end': '#00D1B2'
+				// Updated ReVastra Brand Colors - Professional & Unisex
+				'rv-primary': '#1E293B',     // Slate Navy
+				'rv-secondary': '#38BDF8',   // Sky Blue
+				'rv-accent': '#FCD34D',      // Golden Yellow
+				'rv-bg-light': '#F1F5F9',    // Off White Gray
+				'rv-bg-dark': '#0F172A',     // Charcoal
+				'rv-text-primary': '#0F172A', // Charcoal
+				'rv-text-secondary': '#64748B', // Muted Blue Gray
+				'rv-gradient-start': '#1E293B',
+				'rv-gradient-mid': '#38BDF8',
+				'rv-gradient-end': '#FCD34D'
 			},
 			fontFamily: {
 				'heading': ['Poppins', 'sans-serif'],
@@ -127,37 +127,15 @@ export default {
 						transform: 'translateY(0px)'
 					},
 					'50%': {
-						transform: 'translateY(-20px)'
+						transform: 'translateY(-10px)'
 					}
 				},
 				'pulse-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 5px rgba(93, 63, 211, 0.4)'
+						boxShadow: '0 0 5px rgba(30, 41, 59, 0.4)'
 					},
 					'50%': {
-						boxShadow: '0 0 25px rgba(93, 63, 211, 0.8), 0 0 35px rgba(255, 102, 179, 0.6)'
-					}
-				},
-				'neon-glow': {
-					'0%, 100%': {
-						boxShadow: '0 0 5px rgba(93, 63, 211, 0.5), 0 0 10px rgba(93, 63, 211, 0.3)'
-					},
-					'50%': {
-						boxShadow: '0 0 20px rgba(93, 63, 211, 0.8), 0 0 30px rgba(255, 102, 179, 0.6), 0 0 40px rgba(0, 209, 178, 0.4)'
-					}
-				},
-				'bounce-in': {
-					'0%': {
-						transform: 'scale(0.3)',
-						opacity: '0'
-					},
-					'50%': {
-						transform: 'scale(1.1)',
-						opacity: '0.8'
-					},
-					'100%': {
-						transform: 'scale(1)',
-						opacity: '1'
+						boxShadow: '0 0 25px rgba(56, 189, 248, 0.8), 0 0 35px rgba(252, 211, 77, 0.6)'
 					}
 				}
 			},
@@ -167,20 +145,18 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in-right': 'slide-in-right 0.5s ease-out',
 				'float': 'float 3s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
-				'neon-glow': 'neon-glow 2s ease-in-out infinite',
-				'bounce-in': 'bounce-in 0.6s ease-out'
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'rv-gradient': 'linear-gradient(135deg, #5D3FD3 0%, #FF66B3 50%, #00D1B2 100%)',
-				'rv-gradient-soft': 'linear-gradient(135deg, #5D3FD320 0%, #FF66B320 50%, #00D1B220 100%)',
-				'rv-hero-gradient': 'linear-gradient(135deg, #F9FAFB 0%, #5D3FD308 50%, #FF66B308 100%)'
+				'rv-gradient': 'linear-gradient(135deg, #1E293B 0%, #38BDF8 50%, #FCD34D 100%)',
+				'rv-gradient-soft': 'linear-gradient(135deg, #1E293B20 0%, #38BDF820 50%, #FCD34D20 100%)',
+				'rv-hero-gradient': 'linear-gradient(135deg, #F1F5F9 0%, #1E293B08 50%, #38BDF808 100%)'
 			},
 			boxShadow: {
-				'neon': '0 0 20px rgba(93, 63, 211, 0.5), 0 0 40px rgba(255, 102, 179, 0.3)',
-				'neon-hover': '0 0 30px rgba(93, 63, 211, 0.7), 0 0 60px rgba(255, 102, 179, 0.5)',
+				'neon': '0 0 20px rgba(56, 189, 248, 0.5), 0 0 40px rgba(252, 211, 77, 0.3)',
+				'neon-hover': '0 0 30px rgba(56, 189, 248, 0.7), 0 0 60px rgba(252, 211, 77, 0.5)',
 				'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
 			}
 		}

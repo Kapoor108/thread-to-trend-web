@@ -9,6 +9,10 @@ import CustomizeOutfit from "./pages/CustomizeOutfit";
 import Shop from "./pages/Shop";
 import UpcycleStudio from "./pages/UpcycleStudio";
 import Dashboard from "./pages/Dashboard";
+import StyleFeed from "./pages/StyleFeed";
+import Donate from "./pages/Donate";
+import TailorPortal from "./pages/TailorPortal";
+import NGOPartners from "./pages/NGOPartners";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,11 +29,10 @@ const App = () => (
           <Route path="/shop" element={<Shop />} />
           <Route path="/upcycle-studio" element={<UpcycleStudio />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          {/* Placeholder routes for remaining pages */}
-          <Route path="/donate" element={<div className="pt-24 text-center">Donate Page - Coming Soon!</div>} />
-          <Route path="/tailor-portal" element={<div className="pt-24 text-center">Tailor Portal - Coming Soon!</div>} />
-          <Route path="/ngo-partners" element={<div className="pt-24 text-center">NGO Partners - Coming Soon!</div>} />
-          <Route path="/stylefeed" element={<div className="pt-24 text-center">StyleFeed - Coming Soon!</div>} />
+          <Route path="/stylefeed" element={<StyleFeed />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/tailor-portal" element={<TailorPortal />} />
+          <Route path="/ngo-partners" element={<NGOPartners />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
