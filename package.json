@@ -1,14 +1,17 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "revastra",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "ReVastra - Transform forgotten clothes into sustainable fashion",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

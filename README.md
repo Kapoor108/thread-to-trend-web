@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# ReVastra - From Trash to Trend
 
-## Project info
+A sustainable fashion platform that transforms forgotten clothes into trendy, eco-friendly clothing. ReVastra connects users with tailors, enables outfit customization, and promotes sustainable fashion through donation and upcycling.
 
-**URL**: https://lovable.dev/projects/f9fc9087-ed87-4e2a-9a46-b1dc32549193
+## Features
 
-## How can I edit this code?
+- 🎨 Custom outfit design and visualization
+- 🛍️ Shop sustainable upcycled fashion items
+- ♻️ Upcycle Studio for transforming old clothes
+- 👔 Tailor Portal for professional services
+- 📱 Style Feed for fashion inspiration
+- 🤝 NGO Partners for clothing donations
+- 📊 Personal Dashboard for tracking orders
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui + Radix UI
+- **Routing**: React Router v6
+- **State Management**: TanStack Query
+- **Forms**: React Hook Form + Zod validation
+- **Icons**: Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f9fc9087-ed87-4e2a-9a46-b1dc32549193) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ and npm installed ([install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
+cd revastra
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+```sh
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run build:dev    # Build in development mode
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/      # Reusable UI components
+│   ├── ui/         # shadcn/ui components
+│   └── ...         # Feature components
+├── pages/          # Route pages
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions
+└── main.tsx        # Application entry point
+```
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Build the project for production:
 
-## How can I deploy this project?
+```sh
+npm run build
+```
 
-Simply open [Lovable](https://lovable.dev/projects/f9fc9087-ed87-4e2a-9a46-b1dc32549193) and click on Share -> Publish.
+The `dist/` folder contains the production-ready static files that can be deployed to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
 
-## Can I connect a custom domain to my Lovable project?
+## Contributing
 
-Yes, you can!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is private and proprietary.
